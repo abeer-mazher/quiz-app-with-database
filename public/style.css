@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #beb6ab;
+}
+
+.container .quiz-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.container .quiz-wrapper .heading h1 {
+    text-align: center;
+    color: #6D2932;
+}
+
+.container .quiz-wrapper .qustion-count h3 {
+    text-align: center;
+    color: rgb(94, 91, 91);
+}
+
+.container .quiz-wrapper .question-opt{
+    width: 40%;
+    background-color: white;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    gap: 20px;
+}
+.container .quiz-wrapper .question-opt h3{
+    margin-top: 10px;
+}
+.container .quiz-wrapper .question-opt .option{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+.container .quiz-wrapper .question-opt .option div{
+    width: 40%;
+    height: 35px;
+    background-color: #561C24;
+    border-radius: 10px;
+
+}
+.container .quiz-wrapper .question-opt .option div button {
+    width: 90%;
+    height: 100%;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.container .quiz-wrapper .btn button {
+    padding: 4px 20px;
+    background-color: #770723;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+@media (max-width:600px){
+    .container .quiz-wrapper .question-opt .option{
+        flex-direction: column;
+        color: #beb6ab;
+        align-items: center;
+
+    }
+    .container .quiz-wrapper .question-opt{
+        justify-content: center;
+    }
+    .container .quiz-wrapper .question-opt .option div{
+        width: 80%;
+    }
+
+    
+
+}
